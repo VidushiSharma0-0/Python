@@ -1,0 +1,25 @@
+
+print("welcome to calculator_ developed by Vidushi")
+operator = input("choose your operator\n + for addition\n - for subtraction\n / for division\n * for multiplication")
+a = int(input("enter the first value"))
+b = int(input("enter the second value"))
+if operator == "-":
+    print("answer=", a-b)
+elif operator == "+":
+    if a == 56 and b == 9:
+        print(77)
+    else:
+        print("answer=", a+b)
+elif operator == "/":
+    if a == 56 and b == 6:
+        print(4)
+    else:
+        print("answer=", a/b)
+elif operator == "*":
+    if a == 45 and b == 3:
+        print(555)
+    else:
+        print("answer=", a*b)
+else:
+    print("invalid operator")
+exit()
