@@ -1,0 +1,16 @@
+number_of_guesses = 1
+print("You have 5 guesses")
+while number_of_guesses <= 5:
+    number = int(input("Guess a two-digit number\n"))
+    if number < 18:
+        print("Your guess is lesser than the actual number")
+    if number > 18:
+        print("Your guess is greater than the actual number")
+    if number == 18:
+        print("Congratulations, You guessed it right!")
+        print("You took", number_of_guesses, "guess(es) to get it right")
+        break
+    print("You have", 5-number_of_guesses, "guess(es) left")
+    number_of_guesses = number_of_guesses + 1
+if number_of_guesses > 5:
+    print("Game Over")
